@@ -7,8 +7,9 @@
 }
 
 body {
-    line-height: 1.6;
+    background-color: #f4f4f4;
     color: #333;
+    line-height: 1.6;
 }
 
 /* Container */
@@ -18,19 +19,20 @@ body {
     overflow: hidden;
 }
 
-/* Header Styles */
+/* Header avec le logo et la navbar */
 header {
-    background: #333;
+    background-color: #333;
     color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #ffcc00 3px solid;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
 }
 
-header h1 {
-    text-align: center;
-    margin-bottom: 10px;
-    font-size: 36px;
+.logo {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
 }
 
 nav ul {
@@ -41,7 +43,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 nav ul li a {
@@ -50,35 +52,54 @@ nav ul li a {
     font-size: 18px;
 }
 
-/* Section Home */
-.home {
-    background: url('arras.jpg') no-repeat center center/cover;
-    height: 500px;
-    color: #fff;
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Galerie de photos d'Arras */
+.gallery {
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.gallery h2 {
+    width: 100%;
     text-align: center;
-    padding-top: 100px;
-}
-
-.home h2 {
-    font-size: 48px;
     margin-bottom: 20px;
+    font-size: 36px;
 }
 
-.home p {
-    font-size: 20px;
-    color: black
+.gallery-item {
+    flex: 1 1 calc(25% - 40px); /* 4 images par ligne */
+    max-width: 25%;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
 }
 
 /* Section History */
 .history {
-    padding: 20px;
+    padding: 40px 0;
     background: #f4f4f4;
     text-align: center;
 }
 
 .history h2 {
-    margin-bottom: 20px;
     font-size: 36px;
+    margin-bottom: 20px;
 }
 
 .history p {
@@ -88,7 +109,7 @@ nav ul li a {
 
 /* Section Attractions */
 .attractions {
-    padding: 20px;
+    padding: 40px 0;
     text-align: center;
 }
 
@@ -107,13 +128,12 @@ nav ul li a {
     margin-bottom: 10px;
 }
 
-/* Footer Styles */
+/* Footer */
 footer {
-    background: #333;
+    background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    margin-top: 20px;
 }
 
 footer p {

@@ -7,13 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bienvenue à Arras</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="link/png" href="https://seeklogo.com/images/V/Ville_d_Arras-logo-2054484FE5-seeklogo.com.png"">
 </head>
 
 <body>
-    <!-- En-tête -->
+    <!-- En-tête avec le logo et la barre de navigation -->
     <header>
         <div class="container">
-            <h1>Bienvenue à Arras</h1>
+            <img src="https://seeklogo.com/images/V/Ville_d_Arras-logo-2054484FE5-seeklogo.com.png" alt="Logo Ville d'Arras" class="logo">
             <nav>
                 <ul>
                     <li><a href="#home">Accueil</a></li>
@@ -25,13 +26,22 @@
         </div>
     </header>
 
-    <!-- Section d'accueil -->
-    <section id="home" class="home">
+    <!-- Galerie de photos d'Arras sur la page d'accueil -->
+    <section id="home" class="gallery">
         <div class="container">
-            <h2>Découvrez Arras</h2>
-            <p>Arras est une ville du nord de la France, connue pour sa riche histoire, son architecture étonnante et ses
-                célèbres places. Que vous soyez passionné par l'histoire ou en quête de nouvelles découvertes, Arras
-                saura vous séduire.</p>
+            <h2>Photos de la ville d'Arras</h2>
+            <div class="gallery-item">
+                <img src="https://www.cparama.com/forum/cartes2019/1567664262-Arras-62-25.jpg" alt="Photo de la ville d'Arras">
+            </div>
+            <div class="gallery-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/0_Arras%2C_Grand%27Place_%281%29.JPG" alt="Photo de la Grand-Place d'Arras">
+            </div>
+            <div class="gallery-item">
+                <img src="https://arras.cesi.fr/wp-content/uploads/sites/7/2022/10/2.5-ville-arras-2-2.jpg" alt="Photo du Beffroi d'Arras">
+            </div>
+            <div class="gallery-item">
+                <img src="https://www.hotel-spa-fairway.com/bases/evenement_image/grande/36/Office-Tourisme-Arras-Pays-d-Artois-Citadelle.jpg" alt="Photo de la Citadelle d'Arras">
+            </div>
         </div>
     </section>
 
