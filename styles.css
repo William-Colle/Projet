@@ -18,21 +18,33 @@ body {
     overflow: hidden;
 }
 
-/* Header avec le logo et la navbar */
+/* Header avec logo et titre centré */
 header {
     background-color: #404040;
     color: #99a527;
     padding: 20px 0;
     text-align: center;
+    position: relative;
 }
 
-.logo {
-    max-width: 150px;
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-logo, .right-logo {
+    width: 100px;
     height: auto;
-    display: block;
-    margin: 0 auto 20px auto;
 }
 
+.title {
+    font-size: 94px; /* Taille du texte "Arras" */
+    color: #ffffff; /* Couleur jaune vif pour contraster */
+    font-family: 'Georgia', serif; /* Police différente pour le titre */
+}
+
+/* Navbar */
 nav ul {
     padding: 0;
     list-style: none;
@@ -51,7 +63,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #013474;
+    color: #ffcc00; /* Jaune pour l'effet hover */
 }
 
 /* Galerie de photos d'Arras en grille 2x2 */
@@ -114,44 +126,6 @@ nav ul li a:hover {
     font-size: 18px;
     text-align: center;
     padding: 10px;
-}
-
-/* Section History */
-.history {
-    padding: 40px 0;
-    background: #f4f4f4;
-    text-align: center;
-}
-
-.history h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.history p {
-    font-size: 18px;
-    line-height: 1.8;
-}
-
-/* Section Attractions */
-.attractions {
-    padding: 40px 0;
-    text-align: center;
-}
-
-.attractions h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.attractions ul {
-    list-style: none;
-    padding: 0;
-}
-
-.attractions ul li {
-    font-size: 18px;
-    margin-bottom: 10px;
 }
 
 /* Footer */
