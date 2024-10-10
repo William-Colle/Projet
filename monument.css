@@ -1,19 +1,58 @@
+/* Styles globaux */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    margin: 20px;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Fond gris clair */
+    color: #013474; /* Couleur du texte principale */
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background: #404040; /* Fond sombre pour l'en-tête */
+    color: #99a527; /* Couleur du texte en jaune clair */
+    padding: 10px 0; /* Espacement en haut et en bas de l'en-tête */
+    text-align: center; /* Centre le texte dans l'en-tête */
 }
 
 h1 {
-    color: #0056b3;
+    margin: 0; /* Supprime la marge par défaut du titre */
+    font-size: 36px; /* Taille du titre principale */
+}
+
+main {
+    margin: 20px 0; /* Marge en haut et en bas du contenu principal */
 }
 
 ul {
-    list-style-type: square;
-    padding-left: 20px;
+    list-style-type: none; /* Enlève les puces de la liste */
+    padding: 0; /* Supprime le padding par défaut */
 }
 
-li {
-    margin: 5px 0;
+ul li {
+    background: white; /* Fond blanc pour chaque élément de la liste */
+    border: 1px solid #ddd; /* Bordure grise */
+    border-radius: 5px; /* Arrondi des coins */
+    margin-bottom: 10px; /* Marge entre les éléments */
+    padding: 15px; /* Espacement interne */
+    color: #013474; /* Couleur du texte des éléments de la liste */
+}
+
+ul li:hover {
+    background: #99a527; /* Change le fond au survol */
+    color: white; /* Change la couleur du texte au survol */
+}
+
+/* Styles pour l'icône de maison */
+.home-icon {
+    position: absolute; /* Positionnement absolu */
+    top: 20px; /* Distance du haut */
+    left: 20px; /* Distance de la gauche */
+    text-decoration: none; /* Pas de soulignement sur le lien */
+    z-index: 1000; /* S'assure que l'icône est au-dessus des autres éléments */
+}
+
+.home-icon img {
+    width: 80px; /* Agrandir l'icône à 80px (2 fois 40px) */
+    height: auto; /* Garde le ratio d'aspect */
 }
