@@ -56,25 +56,25 @@ nav ul li a:hover {
     color: #ffcc00;
 }
 
-/* Galerie de photos d'Arras */
+/* Galerie de photos d'Arras en grille 2x2 */
 .gallery {
     margin: 50px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
 }
 
 .gallery h2 {
-    width: 100%;
     text-align: center;
     margin-bottom: 20px;
     font-size: 36px;
 }
 
+/* Grille 2x2 pour les images */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+    grid-gap: 20px; /* Espacement entre les images */
+}
+
 .gallery-item {
-    flex: 1 1 calc(25% - 40px); /* 4 images par ligne */
-    max-width: 25%;
     overflow: hidden;
 }
 
