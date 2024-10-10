@@ -1,0 +1,121 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #ffcc00 3px solid;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Section Home */
+.home {
+    background: url('arras.jpg') no-repeat center center/cover;
+    height: 500px;
+    color: #fff;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.home h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.home p {
+    font-size: 20px;
+    color: black
+}
+
+/* Section History */
+.history {
+    padding: 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.history h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.history p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Section Attractions */
+.attractions {
+    padding: 20px;
+    text-align: center;
+}
+
+.attractions h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.attractions ul {
+    list-style: none;
+    padding: 0;
+}
+
+.attractions ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 10px 0;
+}
