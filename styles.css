@@ -12,7 +12,6 @@ body {
     line-height: 1.6;
 }
 
-/* Container */
 .container {
     width: 80%;
     margin: auto;
@@ -25,7 +24,6 @@ header {
     color: #fff;
     padding: 20px 0;
     text-align: center;
-    position: relative;
 }
 
 .logo {
@@ -75,7 +73,9 @@ nav ul li a:hover {
 }
 
 .gallery-item {
+    position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .gallery-item img {
@@ -88,6 +88,32 @@ nav ul li a:hover {
 
 .gallery-item img:hover {
     transform: scale(1.05);
+}
+
+/* Superposition (overlay) */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Couleur semi-transparente */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
 }
 
 /* Section History */
