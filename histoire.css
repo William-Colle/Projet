@@ -1,41 +1,59 @@
+/* Styles globaux */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #f4f4f4; /* Fond gris clair */
+    color: #013474; /* Couleur du texte principale */
     margin: 0;
     padding: 20px;
 }
 
 header {
-    background: #007BFF;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+    background: #404040; /* Fond sombre pour l'en-tête */
+    color: #99a527; /* Couleur du texte en jaune clair */
+    padding: 10px 0; /* Espacement en haut et en bas de l'en-tête */
+    text-align: center; /* Centre le texte dans l'en-tête */
+    position: relative; /* Pour positionner l'icône de maison par rapport à l'en-tête */
 }
 
 h1 {
-    margin: 0;
+    margin: 0; /* Supprime la marge par défaut du titre */
+    font-size: 36px; /* Taille du titre principale */
 }
 
 main {
-    margin: 20px 0;
+    margin: 20px 0; /* Marge en haut et en bas du contenu principal */
 }
 
 section {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    padding: 15px;
+    background: white; /* Couleur de fond des sections */
+    border: 1px solid #ddd; /* Bordure des sections */
+    border-radius: 5px; /* Arrondi des coins des sections */
+    margin-bottom: 20px; /* Marge entre les sections */
+    padding: 15px; /* Espacement interne des sections */
 }
 
 h2 {
-    color: #007BFF;
+    color: #99a527; /* Couleur des sous-titres */
 }
+
 footer {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 0.9em;
-    color: #777;
+    text-align: center; /* Centre le texte du pied de page */
+    margin-top: 20px; /* Marge au-dessus du pied de page */
+    font-size: 0.9em; /* Taille de police plus petite pour le pied de page */
+    color: #99a527; /* Couleur du texte du pied de page */
+}
+
+/* Styles pour l'icône de maison */
+.home-icon {
+    position: absolute; /* Positionnement absolu */
+    top: 20px; /* Distance du haut */
+    left: 20px; /* Distance de la gauche */
+    text-decoration: none; /* Pas de soulignement sur le lien */
+    z-index: 1000; /* S'assure que l'icône est au-dessus des autres éléments */
+}
+
+.home-icon img {
+    width: 40px; /* Taille de l'icône */
+    height: auto; /* Garde le ratio d'aspect */
 }
