@@ -8,7 +8,7 @@
 
 body {
     background-color: #f4f4f4;
-    color: #333;
+    color: #013474;
     line-height: 1.6;
 }
 
@@ -20,8 +20,8 @@ body {
 
 /* Header avec le logo et la navbar */
 header {
-    background-color: #757fa4;
-    color: #fff;
+    background-color: #404040;
+    color: #99a527;
     padding: 20px 0;
     text-align: center;
 }
@@ -45,13 +45,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #99a527;
     text-decoration: none;
     font-size: 18px;
 }
 
 nav ul li a:hover {
-    color: #ffcc00;
+    color: #013474;
 }
 
 /* Galerie de photos d'Arras en grille 2x2 */
@@ -110,7 +110,7 @@ nav ul li a:hover {
 }
 
 .text {
-    color: white;
+    color: #99a527;
     font-size: 18px;
     text-align: center;
     padding: 10px;
@@ -156,8 +156,8 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #404040;
+    color: #99a527;
     text-align: center;
     padding: 10px 0;
 }
